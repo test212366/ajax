@@ -1,0 +1,42 @@
+.btn {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 1.5rem;
+	text-align: center;
+	transition: all 0.3s ease 0s;
+	min-height: 4.8rem;
+	text-decoration: none;
+	&_white {
+		color: $orangeColor;
+		background-color: #fff;
+		@media (any-hover: hover) {
+			background-color: $orangeColor;
+			color: #fff;
+		}
+	}
+}
+.page__products {
+	margin-top: 20rem;
+	background-color: #fff;
+}
+.products {
+	&__items {
+		display: grid;
+		gap: 32px;
+		grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+	}
+}
+.item-product {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	&__body {
+		flex: 1 1 auto;
+		display: flex;
+		flex-direction: column;
+	}
+	&__content {
+		flex: 1 1 auto;
+	}
+}
